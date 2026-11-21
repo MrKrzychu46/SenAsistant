@@ -1,41 +1,83 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# dependencies
+# Dependencies
 node_modules/
+.pnp/
+.pnp.js
 
-# Expo
+# Expo & EAS
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
+*.apk
+*.aab
+*.ipa
+*.tar.gz
 
-# Native
+# Generated native folders (Prebuild / CNG)
+/ios
+/android
+
+# Native & Signing Credentials
 .kotlin/
 *.orig.*
 *.jks
 *.p8
 *.p12
 *.key
+*.keystore
 *.mobileprovision
+*.pem
+google-services.json
+GoogleService-Info.plist
 
-# Metro
+# Metro & Bundler Cache
 .metro-health-check*
+.metro-cache/
+.cache/
 
-# debug
+# TypeScript
+*.tsbuildinfo
+
+# Testing & Coverage
+coverage/
+.nyc_output/
+
+# Logs & Debug
+logs/
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+pnpm-debug.*
+.pnpm-debug.log*
 
-# macOS
+# Environment Variables
+.env
+.env.*
+!.env.example
+!.env.template
+
+# IDEs, Editors & AI Tools
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.claude/
+.cursor/
+.windsurf/
+
+# OS Specific (macOS / Windows / Linux)
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
-/ios
-/android
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
